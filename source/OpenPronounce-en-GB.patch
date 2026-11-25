@@ -1,0 +1,118 @@
+--- a/openpronounce/languages.py
++++ b/openpronounce/languages.py
+@@ -32,6 +32,8 @@
+     #: English (four times in five), measured on native speakers (FLEURS dev). The reports
+     #: show the probability moved onto the model's scale. ``None`` keeps the model's own.
+     word_threshold: float | None = None
++    #: Optional local dictionary with word-level pronunciations and acoustic variant selection.
++    pronunciation: object | None = None
+ 
+     def accepted(self, phone):
+         """Tokens accepted for ``phone`` besides itself."""
+--- a/openpronounce/g2p.py
++++ b/openpronounce/g2p.py
+@@ -300,6 +300,9 @@
+ @lru_cache(maxsize=1024)
+ def phones_by_word(text, lang=DEFAULT_LANGUAGE):
+     """``(words, phones_per_word)`` of ``text``, phones as the backend writes them (not normalized)."""
++    provider = get_language(lang).pronunciation
++    if provider is not None:
++        return provider.phones_by_word(text)
+     words = words_of(text)
+     if not words:
+         return (), ()
+@@ -310,6 +313,9 @@
+ 
+ def is_guessed(word, lang=DEFAULT_LANGUAGE):
+     """True when the expected pronunciation of ``word`` is a letter-to-sound guess, not a dictionary entry."""
++    provider = get_language(lang).pronunciation
++    if provider is not None:
++        return provider.is_guessed(word)
+     if backend(lang) != "lexicon":
+         return False
+     return _lexicon_word(word.lower(), lang)[1]
+--- a/openpronounce/gop.py
++++ b/openpronounce/gop.py
+@@ -71,7 +71,7 @@
+     """
+     suffix = recognizer_suffix()
+     names = []
+-    for name in dict.fromkeys((lang, "generic")):
++    for name in dict.fromkeys((lang, lang.partition("-")[0], "generic")):
+         if suffix:
+             names.append(f"{kind}_{name}_{suffix}.json")
+         names.append(f"{kind}_{name}.json")
+@@ -260,7 +260,7 @@
+     from .phones import _NEAR_PHONES
+ 
+     near = {}
+-    for group in _NEAR_PHONES.get(lang, []):
++    for group in _NEAR_PHONES.get(lang.partition("-")[0], []):
+         for phone in group:
+             near.setdefault(phone, set()).update(group - {phone})
+     return near
+@@ -290,7 +290,7 @@
+     n_heard = int(((greedy[1:] != greedy[:-1]) & (greedy[1:] != 0)).sum() + (greedy[0] != 0))
+     heard_ratio = n_heard / len(labels.phones)
+     near = _near_phones(lang)
+-    function_words = FUNCTION_WORDS.get(lang, set())
++    function_words = FUNCTION_WORDS.get(lang.partition("-")[0], set())
+     n_phones = [len(g) for g in groups]
+ 
+     scored = []
+--- a/openpronounce/phones.py
++++ b/openpronounce/phones.py
+@@ -69,6 +69,7 @@
+ # should be penalised for, per language. Length marks are always dropped. Only
+ # English needs merges so far: ɔ/ɑ and ɾ/t are contrastive in French, German or Spanish.
+ _PHONE_MAP = {
++    "en-gb": {"ɐ": "ə", "ᵻ": "ɪ", "ɫ": "l", "r": "ɹ", "g": "ɡ"},
+     "en": {
+         "ᵻ": "ɪ",   # espeak's reduced /ɪ/
+         "ɐ": "ə",   # espeak's reduced /a/ (article "a")
+@@ -203,8 +204,9 @@
+ 
+ 
+ def normalize_phone(phone, lang=DEFAULT_LANGUAGE):
+-    """Map a phone to its canonical form (drop length marks, merge near-identical phones of ``lang``)."""
+-    phone = _TONE_RE.sub("", phone.replace("ː", ""))
++    """Map a recognizer phone to a dialect's canonical form."""
++    # British LOT/THOUGHT, PALM and NURSE retain their independent labels.
++    phone = _TONE_RE.sub("", phone if lang == "en-gb" else phone.replace("ː", ""))
+     phone = _TOKEN_ALIASES.get(phone, phone)
+     return _PHONE_MAP.get(lang, {}).get(phone, phone)
+ 
+@@ -404,7 +406,7 @@
+ 
+ def _substitution_cost(expected, heard, lang):
+     """Cost of hearing ``heard`` instead of ``expected``: 1, or NEAR_PHONE_COST for close phones."""
+-    for group in _NEAR_PHONES.get(lang, []):
++    for group in _NEAR_PHONES.get(lang.partition("-")[0], []):
+         if expected in group and heard in group:
+             return NEAR_PHONE_COST
+     return 1.0
+@@ -672,7 +674,13 @@
+     consumed by :mod:`openpronounce.scorer`.
+     """
+     recognition, heard, heard_confidences = _as_recognition(heard_phones)
+-    words, groups = get_expected_phones(text_reference, lang)
++    provider = get_language(lang).pronunciation
++    if recognition is not None and provider is not None:
++        words, raw_groups = provider.phones_by_word(text_reference, recognition)
++        groups = [normalize_phones(group, lang) for group in raw_groups]
++    else:
++        raw_groups = None
++        words, groups = get_expected_phones(text_reference, lang)
+     expected = [p for g in groups for p in g]
+     if expected:
+         phone_error_rate = Levenshtein.distance(expected, heard) / len(expected)
+@@ -681,7 +689,8 @@
+ 
+     gop_reports = None
+     if recognition is not None and use_model:
+-        _, raw_groups = get_expected_phones(text_reference, lang, normalize=False)
++        if raw_groups is None:
++            _, raw_groups = get_expected_phones(text_reference, lang, normalize=False)
+         gop_reports = _gop_word_reports(recognition, words, groups, raw_groups, lang, threshold)
+     if gop_reports is not None:
+         reports, reliability, bundle = gop_reports

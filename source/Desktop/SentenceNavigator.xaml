@@ -1,0 +1,12 @@
+<UserControl x:Class="ReadAloudStudio.SentenceNavigator"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             PreviewKeyDown="NavigateByKey">
+  <StackPanel Orientation="Horizontal">
+    <Button x:Name="Previous" Content="←" Width="31" Height="28" Padding="2,0" FontSize="17" ToolTip="{DynamicResource Ui.PreviousSentence}"
+            AutomationProperties.Name="{DynamicResource Ui.PreviousSentence}" Click="PreviousClick"/>
+    <TextBlock x:Name="Position" Margin="9,0" Foreground="{StaticResource Accent}" FontWeight="SemiBold" AutomationProperties.LiveSetting="Polite"/>
+    <Button x:Name="Next" Content="→" Width="31" Height="28" Padding="2,0" FontSize="17" ToolTip="{DynamicResource Ui.NextSentence}"
+            AutomationProperties.Name="{DynamicResource Ui.NextSentence}" Click="NextClick"/>
+  </StackPanel>
+</UserControl>

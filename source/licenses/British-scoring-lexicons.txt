@@ -1,0 +1,16 @@
+British pronunciation references used by ReadAloudStudio
+
+The application includes the following unmodified data files, and converts their symbols to phonemes at run time. The combined in-memory index, regional reference selection and modifications to OpenPronounce are specific to this application.
+
+engine/lexicons/en_UK.txt
+English (Received Pronunciation) from open-dict-data/ipa-dict, derived from Leonardo Boiko's ipacards. The UK data is licensed under GPL-3.0. See ipacards-GPL-3.0.txt.
+Revision 972cd67dd5f96bc5660e28070cde26e3928abcd7
+SHA-256 221394caef0cf723b4f2df81a98ac33191293257b88aed5b1fb89466d3a0dc77
+https://github.com/open-dict-data/ipa-dict/blob/972cd67dd5f96bc5660e28070cde26e3928abcd7/data/en_UK.txt
+https://github.com/leoboiko/ipacards
+
+engine/lexicons/gb_gold.json
+Misaki British English gold lexicon by hexgrad and contributors. Apache License 2.0. See Misaki-LICENSE.txt.
+Revision fba1236595f2d2bf21d414ba6e57d25256afada3
+SHA-256 29e62f4b60261c88f7f3c2c7811ca3825978948090b72d2b27d565b729282f71
+https://github.com/hexgrad/misaki/blob/fba1236595f2d2bf21d414ba6e57d25256afada3/misaki/data/gb_gold.json

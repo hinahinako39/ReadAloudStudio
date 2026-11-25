@@ -1,0 +1,38 @@
+运行和重新构建
+完整应用可以直接运行。修改窗口后，关闭应用，在装有 .NET 10 SDK 的 Windows x64 机器上运行 source\Build.ps1。脚本接受 -Dotnet 指定 dotnet.exe 的完整路径。构建使用 NAudio.Wasapi 2.2.1，自包含发布文件写到应用根目录。
+
+界面语言
+英文字符串位于 Desktop\Strings.resx，简体中文位于 Desktop\Strings.zh-CN.resx。XAML 通过 DynamicResource Ui.* 更新静态文字，动态反馈通过 UiText 格式化。preferences.json 的 uiLanguage 保存 en-GB 或 zh-CN。历史记录中的诊断文字在显示时翻译，原文、转写和录音继续使用原数据。
+
+Python 和模型
+runtime\python 是应用自带的 Python 3.11 环境。从应用目录运行 runtime\python\python.exe -I -B -m pip check 可以核对依赖，source\runtime-lock.txt 记录实际安装版本。PyTorch 2.8.0+cu128 来自官方 Windows CUDA 12.8 wheel。运行时会探测 CUDA 并在显卡上执行一次运算，随后将词识别模型、音素模型和投影层放在选定设备上。音频处理、对齐和统计评分使用 CPU。可将 READALOUD_DEVICE 设置为 cpu 后启动应用以强制使用 CPU，auto 为默认值。
+engine\models\hub 含识别、评测和英音示范的 Hugging Face 本地缓存。source\models.json 记录模型提交、文件大小和权重 SHA-256。需要检查或补回文件时，运行 source\Fetch-Models.ps1。可用 -Group voices 单独修复示范模型。日常运行时开启 HF_HUB_OFFLINE 和 TRANSFORMERS_OFFLINE。
+
+本地接口
+桌面端用随机会话令牌启动 engine\service.py --data <数据目录>，将令牌放在子进程环境变量 READALOUD_SESSION_TOKEN。服务在 127.0.0.1 自动选端口，首行标准输出返回含 port 的 JSON。客户端保留子进程的标准输入管道，管道关闭时服务退出。启动和请求的完整示例在 Desktop\EngineClient.cs。
+每次请求需带 X-Session 请求头。GET /health 的 device 字段返回当前推理设备，GET /history 返回历史，GET /attempt/<UUID> 返回一条结果和这次评测实际使用的设备。静音等在预检阶段返回的录音没有推理设备，旧版历史兼容缺少该字段的结果。要评测新录音，先将 16 kHz 单声道、16 位 PCM WAV 写入数据目录的 drafts\<UUID>.wav，再 POST /assess，正文为含 id、reference 的 UTF-8 JSON，附 Content-Length。对同一编号和原句重试会返回同一结果。录音和 SQLite 历史一起保存在该数据目录。
+
+连续段落
+录音和导入的上限均为 300 秒，reference 最长 6000 字符。engine\passages.py 先按标点和换行分句，超过 42 词的分句优先按从句切开。词转写模型每次分析 12 秒的核心音频，两侧各取最多 2 秒上下文。丢弃重叠边缘的预测后，整段连续解码出带时间的词，再用词级编辑距离将原文按次序定位到音频。每个定位区间复用单句音素评测，结果中的词和音素时间均相对于整段录音开头。明显缺少或无法可靠区分的分句保留为空区间。
+段落返回 sections，每项含 index、reference、firstWord、wordCount、status、起止秒数、转写、分数及原因。0 起算的 firstWord 指向顶层 words。sentenceCount 与 assessedCount 是分句总数和可靠评分句数。整段 reliable 为真时，scores 为各可靠分句按原文词数加权的结果。旧单句保持原有返回格式，旧练习记录可以直接打开。协议仍使用同一 POST /assess。
+POST /prepare 接受含 reference 的 JSON，用同一套分句器返回 sections 和带音标的 words。ipa 是英式评分的首选词典读音。britishIpa 和 americanIpa 分别是两种示范的独立读词音标，sapi 供美式系统语音朗读。POST /demo 接受 voice（gb-cori 或 gb-northern）与 reference，返回 sampleRate 和 Base64 编码的 16 位小端单声道 pcm。客户端按原文依次合成、播放各分句。示范使用本机 CPU，声音选择保存于 preferences.json 的 demoVoiceId。示范与读音查询均不写练习历史。
+
+英式评分
+engine\gb_reference.py 加载 engine\lexicons 中的英式词典，按单词组织 UK 音素、收录的异读、常见弱读和可选的连读 r。对有多个候选的词，先用全文对齐估计词边界，再在同一帧区间比较候选的 CTC 似然。选定的音素进入正式的整句强制对齐、GOP 错音模型和分数预测。两套词典均无条目时，使用英国 eSpeak 规则，并为词级报告标记 guessed。英式设置保留长音、LOT/THOUGHT 和非卷舌 NURSE 的区别。声学网络、英语错音和评分模型沿用原版 English distilled 权重。词典与许可见 source\licenses\British-scoring-lexicons.txt。
+应用携带的 OpenPronounce 1.1.0 已接入地区词典和对应的英语评分权重。若重新安装上游 Python 包，请在应用根目录运行 git apply --directory=runtime/python/Lib/site-packages source/OpenPronounce-en-GB.patch。该差异文件以未修改的 1.1.0 为基线。
+新结果包含 referenceAccent=en-GB 与 referenceProfile=en-GB-rp-v1。旧记录缺少版本字段时按 en-US 读取。POST /rescore 接受录音 id，读取同一 recordings WAV，在 SQLite 的 assessment_versions 表中按录音与参考版本保存结果和原始证据。练习日期、数量和原始 attempts 记录均保留，重复请求使用已保存的英式版本。历史列表和单条详情读取同一生效版本。
+
+单句重练与范读
+单句重练复用 POST /assess。请求可包含 sentencePractice，其中 passage 是全文，sectionIndex 是从零开始的句子位置，parentId 是可选的整段练习 ID。服务校验句子与位置，再将这次独立录音和评分写入 attempts。历史、按英式重评和中断重试均保留这一关联。
+导入范读时，桌面将 WAV 转为 16 kHz 单声道 PCM，放在 example-drafts，再向 /examples/import 提交 id、reference 和 name。服务使用本地 ASR 时间戳匹配原文，确认的分句和词才有可播放的范围。导入成功的范读位于 examples 目录，元数据写入 example_tracks。/examples 接受原文并返回该篇的范读。/examples/timing 接受 reference、sampleRate 和以 Base64 编码的单声道 16 位 pcm，为内置声音生成的整句音频返回词时间。
+MainWindow.SentencePractice.cs 管理原段、重练和历史切换。MainWindow.Examples.cs 管理范读来源、整句样音缓存和词片段。处于单句重练时，查找自带范读始终使用全文和原句的位置。语境回听保留选中词及同句前后各一个已定位的相邻词。
+
+第三方项目和模型卡
+OpenPronounce 1.1.0 与 English distilled 模型使用 AGPL-3.0，随包包含其 Python 源码、模型卡、许可证与声明。其他组件的许可见各包的 dist-info 和 licenses 目录。
+OpenPronounce 项目  https://github.com/OpenPronounce/OpenPronounce
+英语音素模型  https://huggingface.co/OpenPronounce/wav2vec2-base-phones-en
+英语词转写模型  https://huggingface.co/facebook/wav2vec2-large-960h
+NAudio  https://github.com/naudio/NAudio
+英音合成使用 Piper 1.8.0（GPL-3.0-or-later）和 ONNX Runtime。Cori 的训练数据为 NVIDIA Hi-Fi Multi-Speaker English TTS Dataset（CC BY 4.0，朗读者 Cori Samuel），英格兰北部男声使用 OpenSLR 83（CC BY-SA 4.0）。两款模型的原始 MODEL_CARD 随权重保存，使用的提交和校验值见 models.json。
+Piper  https://github.com/OHF-Voice/piper1-gpl
+示范模型与出处  https://huggingface.co/rhasspy/piper-voices/tree/5ec43b186ef915a195d3ddbcfd9916e76c503c3f/en/en_GB

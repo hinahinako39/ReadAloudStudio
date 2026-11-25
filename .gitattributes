@@ -1,0 +1,5 @@
+* text=auto
+*.patch text eol=lf
+/engine/lexicons/* -text
+*.wav binary
+*.jpg binary

@@ -1,0 +1,313 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <resheader name="resmimetype"><value>text/microsoft-resx</value></resheader>
+  <resheader name="version"><value>2.0</value></resheader>
+  <resheader name="reader"><value>System.Resources.ResXResourceReader, System.Windows.Forms</value></resheader>
+  <resheader name="writer"><value>System.Resources.ResXResourceWriter, System.Windows.Forms</value></resheader>
+  <data name="AppName" xml:space="preserve"><value>Read Aloud</value></data>
+  <data name="WindowTitle" xml:space="preserve"><value>Read Aloud · Pronunciation Studio</value></data>
+  <data name="NavPractice" xml:space="preserve"><value>Practice</value></data>
+  <data name="NavCompare" xml:space="preserve"><value>Compare</value></data>
+  <data name="NavHistory" xml:space="preserve"><value>History</value></data>
+  <data name="LanguageTitle" xml:space="preserve"><value>Interface language</value></data>
+  <data name="LanguageHelp" xml:space="preserve"><value>Choose the interface language</value></data>
+  <data name="LanguageApply" xml:space="preserve"><value>Apply</value></data>
+  <data name="Cancel" xml:space="preserve"><value>Cancel</value></data>
+  <data name="DetectDevice" xml:space="preserve"><value>Detecting device…</value></data>
+  <data name="EditTitle" xml:space="preserve"><value>Choose your reading text</value></data>
+  <data name="ReferenceInput" xml:space="preserve"><value>English reading text</value></data>
+  <data name="ApplyText" xml:space="preserve"><value>Use this text</value></data>
+  <data name="TextLimits" xml:space="preserve"><value>Up to 6,000 characters · 5 minutes per recording</value></data>
+  <data name="ChangeText" xml:space="preserve"><value>Change text</value></data>
+  <data name="ReadingText" xml:space="preserve"><value>Reading text</value></data>
+  <data name="OriginalAudio" xml:space="preserve"><value>Your recording</value></data>
+  <data name="StartRecording" xml:space="preserve"><value>Start recording</value></data>
+  <data name="ExampleSentence" xml:space="preserve"><value>Sentence example</value></data>
+  <data name="ExamplePassage" xml:space="preserve"><value>Passage example</value></data>
+  <data name="PlayOriginal" xml:space="preserve"><value>Play recording</value></data>
+  <data name="PlaySection" xml:space="preserve"><value>Play this sentence</value></data>
+  <data name="ImportWav" xml:space="preserve"><value>Import WAV</value></data>
+  <data name="RetryScoring" xml:space="preserve"><value>Retry assessment</value></data>
+  <data name="InputLevel" xml:space="preserve"><value>Microphone level</value></data>
+  <data name="Microphone" xml:space="preserve"><value>Microphone</value></data>
+  <data name="NoMicSelected" xml:space="preserve"><value>No microphone selected</value></data>
+  <data name="Refresh" xml:space="preserve"><value>Refresh</value></data>
+  <data name="ExpandText" xml:space="preserve"><value>Expand text</value></data>
+  <data name="CollapseText" xml:space="preserve"><value>Collapse text</value></data>
+  <data name="FullTextPreview" xml:space="preserve"><value>Passage preview</value></data>
+  <data name="JumpHint" xml:space="preserve"><value>Select a sentence to jump to it</value></data>
+  <data name="MissingHelp" xml:space="preserve"><value>A crossed-out word may have been skipped</value></data>
+  <data name="SentenceReviewLegend" xml:space="preserve"><value>Sentence needs review</value></data>
+  <data name="TranscriptTitle" xml:space="preserve"><value>Transcript</value></data>
+  <data name="SentenceTranscript" xml:space="preserve"><value>Sentence transcript</value></data>
+  <data name="FullTranscript" xml:space="preserve"><value>View passage transcript</value></data>
+  <data name="NextFlag" xml:space="preserve"><value>Next flagged word</value></data>
+  <data name="NextFlagHelp" xml:space="preserve"><value>Move to the next flagged word in reading order, wrapping at the end</value></data>
+  <data name="FeedbackTitle" xml:space="preserve"><value>Word feedback</value></data>
+  <data name="SelectWord" xml:space="preserve"><value>Select a word</value></data>
+  <data name="VoiceIpaHelp" xml:space="preserve"><value>The selected voice’s pronunciation of the word in isolation</value></data>
+  <data name="PlayWord" xml:space="preserve"><value>Hear my recording</value></data>
+  <data name="WordExample" xml:space="preserve"><value>Hear example</value></data>
+  <data name="WordExampleHelp" xml:space="preserve"><value>Hear this word in the selected voice</value></data>
+  <data name="Voice" xml:space="preserve"><value>Example voice</value></data>
+  <data name="VoiceHelp" xml:space="preserve"><value>Used for both word and passage examples</value></data>
+  <data name="PlayExtra" xml:space="preserve"><value>Play extra speech</value></data>
+  <data name="ReadingScore" xml:space="preserve"><value>Reading score</value></data>
+  <data name="Total" xml:space="preserve"><value>Overall</value></data>
+  <data name="Accuracy" xml:space="preserve"><value>Accuracy</value></data>
+  <data name="Fluency" xml:space="preserve"><value>Fluency</value></data>
+  <data name="Prosody" xml:space="preserve"><value>Prosody</value></data>
+  <data name="RescoreBritish" xml:space="preserve"><value>Rescore with UK reference</value></data>
+  <data name="RescoreHelp" xml:space="preserve"><value>Reassess this recording with the British pronunciation reference</value></data>
+  <data name="PauseHelp" xml:space="preserve"><value>Estimated from aligned neighbouring words. Gaps over 0.25 seconds count as pauses. Gaps between sentences appear separately.</value></data>
+  <data name="ScoringBasis" xml:space="preserve"><value>How scoring works</value></data>
+  <data name="CompareTitle" xml:space="preserve"><value>Compare two readings</value></data>
+  <data name="PlaybackRange" xml:space="preserve"><value>Playback range</value></data>
+  <data name="TakeA" xml:space="preserve"><value>Take A</value></data>
+  <data name="TakeB" xml:space="preserve"><value>Take B</value></data>
+  <data name="PlayA" xml:space="preserve"><value>Play take A</value></data>
+  <data name="PlayB" xml:space="preserve"><value>Play take B</value></data>
+  <data name="PlayPair" xml:space="preserve"><value>Play A then B</value></data>
+  <data name="StopPlayback" xml:space="preserve"><value>Stop playback</value></data>
+  <data name="StartingService" xml:space="preserve"><value>Starting the local service…</value></data>
+  <data name="PreviousSentence" xml:space="preserve"><value>Previous sentence</value></data>
+  <data name="NextSentence" xml:space="preserve"><value>Next sentence</value></data>
+  <data name="ParkExample" xml:space="preserve"><value>After the rain (3 sentences)</value></data>
+  <data name="VoiceSwitched" xml:space="preserve"><value>Example voice changed · {0}</value></data>
+  <data name="PendingRecovered" xml:space="preserve"><value>Your last recording was saved. Select “Retry assessment” to score it.</value></data>
+  <data name="NoMicReady" xml:space="preserve"><value>No microphone detected. Refresh the device list or import a WAV file.</value></data>
+  <data name="Ready" xml:space="preserve"><value>Ready · Recording and assessment run on this device</value></data>
+  <data name="StopAndScore" xml:space="preserve"><value>Stop and score</value></data>
+  <data name="OpeningMic" xml:space="preserve"><value>Opening microphone…</value></data>
+  <data name="Assessing" xml:space="preserve"><value>Assessing…</value></data>
+  <data name="ReadAgain" xml:space="preserve"><value>Record again</value></data>
+  <data name="NoMicImport" xml:space="preserve"><value>No microphones available. You can import a WAV file.</value></data>
+  <data name="MicRefreshed" xml:space="preserve"><value>Microphone list refreshed</value></data>
+  <data name="SavePrefsFailed" xml:space="preserve"><value>Could not save settings. {0}</value></data>
+  <data name="LocalGpu" xml:space="preserve"><value>Local GPU · {0}</value></data>
+  <data name="LocalCpu" xml:space="preserve"><value>Local CPU</value></data>
+  <data name="ActivePage" xml:space="preserve"><value>Current page</value></data>
+  <data name="InvalidText" xml:space="preserve"><value>Enter an English sentence or passage of up to 6,000 characters.</value></data>
+  <data name="TextReady" xml:space="preserve"><value>Text ready. You can read it in one take.</value></data>
+  <data name="PrepareFailed" xml:space="preserve"><value>Could not prepare the sentences and pronunciations. {0}</value></data>
+  <data name="PlayPassage" xml:space="preserve"><value>Play passage</value></data>
+  <data name="PlaySentence" xml:space="preserve"><value>Play sentence</value></data>
+  <data name="ScoredCount" xml:space="preserve"><value>{0} of {1} sentences scored</value></data>
+  <data name="PassageScoreValue" xml:space="preserve"><value>Passage score {0}</value></data>
+  <data name="PassageReview" xml:space="preserve"><value>Passage needs review</value></data>
+  <data name="WeightedHelp" xml:space="preserve"><value>Weighted by the number of words in each sentence</value></data>
+  <data name="NoSpeech" xml:space="preserve"><value>No clear speech was recognised.</value></data>
+  <data name="MarkedHint" xml:space="preserve"><value>Select a flagged word for feedback</value></data>
+  <data name="ViewFlag" xml:space="preserve"><value>View flagged word</value></data>
+  <data name="PronunciationCount" xml:space="preserve"><value>Pronunciation flags · {0}</value></data>
+  <data name="MissingCount" xml:space="preserve"><value>Possible omissions · {0}</value></data>
+  <data name="GoToSentence" xml:space="preserve"><value>Go to sentence {0}</value></data>
+  <data name="PossibleSkip" xml:space="preserve"><value>Possibly skipped</value></data>
+  <data name="NeedsReview" xml:space="preserve"><value>Needs review</value></data>
+  <data name="PossibleOmission" xml:space="preserve"><value>Possible omission</value></data>
+  <data name="PronunciationFlag" xml:space="preserve"><value>Possible pronunciation issue</value></data>
+  <data name="PhoneAlternative" xml:space="preserve"><value>Target /{0}/, possibly closer to /{1}/</value></data>
+  <data name="SentenceNumber" xml:space="preserve"><value>Sentence {0}</value></data>
+  <data name="SentencePosition" xml:space="preserve"><value>Sentence {0} of {1}</value></data>
+  <data name="TranscriptPending" xml:space="preserve"><value>Your transcript will appear after you record.</value></data>
+  <data name="NoClearSpeech" xml:space="preserve"><value>No clear speech was detected.</value></data>
+  <data name="SectionNoSpeech" xml:space="preserve"><value>No clear speech could be matched to this sentence.</value></data>
+  <data name="ExtraAlignment" xml:space="preserve"><value>The alignment suggests extra speech.</value></data>
+  <data name="Differences" xml:space="preserve"><value>Differences found</value></data>
+  <data name="British" xml:space="preserve"><value>British</value></data>
+  <data name="LegacyUS" xml:space="preserve"><value>US (legacy)</value></data>
+  <data name="SentenceScore" xml:space="preserve"><value>Sentence score</value></data>
+  <data name="NumberedScore" xml:space="preserve"><value>Sentence {0} score</value></data>
+  <data name="BasisLegacy" xml:space="preserve"><value>This take used the earlier US dictionary. Select “Rescore with UK reference” to reassess the original audio.</value></data>
+  <data name="BasisUK" xml:space="preserve"><value>Sounds are aligned to a British pronunciation dictionary. When it lists several pronunciations, the closest match to the recording is used.</value></data>
+  <data name="BasisModel" xml:space="preserve"><value>The four scores use sound matches, pace, pauses, pitch and volume. The English model uses its original weights. Its British-reference scores have yet to be validated against independent UK human ratings.</value></data>
+  <data name="ScorePending" xml:space="preserve"><value>Record a take to see your scores.</value></data>
+  <data name="SectionTime" xml:space="preserve"><value>Sentence audio {0:0.00}–{1:0.00} s</value></data>
+  <data name="ElapsedScore" xml:space="preserve"><value>Assessed in {0:0.0} s</value></data>
+  <data name="WordPauses" xml:space="preserve"><value>Word pauses · {0}. Longest gap about {1:0.00} s ({2} → {3}).</value></data>
+  <data name="NoWordPauses" xml:space="preserve"><value>No gaps over 0.25 s between aligned neighbouring words.</value></data>
+  <data name="BetweenSentences" xml:space="preserve"><value>Gap after the previous sentence · about {0:0.00} s</value></data>
+  <data name="WordHelp" xml:space="preserve"><value>Check the pronunciation of {0}</value></data>
+  <data name="SelectWordName" xml:space="preserve"><value>Show feedback for {0}</value></data>
+  <data name="SelectForAudio" xml:space="preserve"><value>Select a word to hear it in your recording.</value></data>
+  <data name="NoAlignedWord" xml:space="preserve"><value>No word could be aligned for playback. Listen to the whole sentence or try another take.</value></data>
+  <data name="MissingFeedback" xml:space="preserve"><value>You may have skipped this word. Listen to the whole sentence to check.</value></data>
+  <data name="UnreliableFeedback" xml:space="preserve"><value>The recording could not be assessed reliably. Check the text, listen to the example and try again.</value></data>
+  <data name="GuessedFeedback" xml:space="preserve"><value>The target pronunciation was inferred using dictionary rules. Listen to the recording to check it.</value></data>
+  <data name="ClearFeedback" xml:space="preserve"><value>No clear pronunciation issue was flagged. Listen to the word in context.</value></data>
+  <data name="UncertainFeedback" xml:space="preserve"><value>Listen to this word again. The model could not identify a specific sound. Compare it with the example.</value></data>
+  <data name="CueTh" xml:space="preserve"><value>Rest the tip of your tongue lightly between your teeth and let air flow out.</value></data>
+  <data name="CueVoicedTh" xml:space="preserve"><value>Rest your tongue tip between your teeth and add voice as the air flows out.</value></data>
+  <data name="CueKit" xml:space="preserve"><value>Relax the corners of your mouth and keep the vowel short.</value></data>
+  <data name="CueFleece" xml:space="preserve"><value>Raise the front of your tongue towards the hard palate and keep the vowel clear.</value></data>
+  <data name="CueTrap" xml:space="preserve"><value>Open your jaw a little more and keep your tongue forward.</value></data>
+  <data name="CueNurse" xml:space="preserve"><value>Keep your tongue in the middle of your mouth and sustain the vowel steadily.</value></data>
+  <data name="CuePalm" xml:space="preserve"><value>Open your jaw, draw your tongue back and lengthen the vowel.</value></data>
+  <data name="CueLot" xml:space="preserve"><value>Round your lips slightly and make a short vowel at the back of your mouth.</value></data>
+  <data name="CueGoat" xml:space="preserve"><value>Glide from a central vowel towards /ʊ/, gradually rounding your lips.</value></data>
+  <data name="CueL" xml:space="preserve"><value>Touch the ridge behind your upper teeth with your tongue tip and let air pass around its sides.</value></data>
+  <data name="CueR" xml:space="preserve"><value>Draw your tongue slightly back, leaving a gap between its tip and the ridge behind your upper teeth.</value></data>
+  <data name="CueV" xml:space="preserve"><value>Touch your lower lip lightly with your upper teeth and add voice as the air passes through.</value></data>
+  <data name="CueF" xml:space="preserve"><value>Touch your lower lip lightly with your upper teeth and let the air flow steadily.</value></data>
+  <data name="CueW" xml:space="preserve"><value>Round your lips, then glide into the following vowel.</value></data>
+  <data name="CueS" xml:space="preserve"><value>Bring your tongue close to the ridge behind your upper teeth and direct air along its centre.</value></data>
+  <data name="CueZ" xml:space="preserve"><value>Bring your tongue close to the ridge behind your upper teeth. Keep the air flowing and add voice.</value></data>
+  <data name="CueSh" xml:space="preserve"><value>Raise your tongue just behind the ridge above your upper teeth and round your lips slightly.</value></data>
+  <data name="CueNg" xml:space="preserve"><value>Lift the back of your tongue to your soft palate and let air pass through your nose.</value></data>
+  <data name="CueGeneral" xml:space="preserve"><value>Listen to the word on its own, then practise it in the sentence.</value></data>
+  <data name="SoundFeedback" xml:space="preserve"><value>The target is /{0}/. Your sound may be closer to /{1}/. {2}</value></data>
+  <data name="ListenBack" xml:space="preserve"><value>Listen back</value></data>
+  <data name="UKExample" xml:space="preserve"><value>UK</value></data>
+  <data name="USExample" xml:space="preserve"><value>US</value></data>
+  <data name="ScoringIpa" xml:space="preserve"><value>Scoring target ({0})  /{1}/</value></data>
+  <data name="UnknownBefore" xml:space="preserve"><value>This word is outside the dictionary. The example is synthesised locally.</value></data>
+  <data name="ListenBefore" xml:space="preserve"><value>Listen to the example, then record yourself to compare.</value></data>
+  <data name="TimeRange" xml:space="preserve"><value>{0:0.00}–{1:0.00} s</value></data>
+  <data name="NotLocated" xml:space="preserve"><value>Sentence not aligned</value></data>
+  <data name="Seconds" xml:space="preserve"><value>{0:0.00} s</value></data>
+  <data name="ShortSeconds" xml:space="preserve"><value>{0:0.0} s</value></data>
+  <data name="TargetPhone" xml:space="preserve"><value>Target /{0}/</value></data>
+  <data name="RecordingStarted" xml:space="preserve"><value>Recording · Select “Stop and score” when you finish.</value></data>
+  <data name="MicOpenError" xml:space="preserve"><value>Could not open the microphone. Check Windows microphone access or refresh the device list.</value></data>
+  <data name="RecordingClock" xml:space="preserve"><value>Recording · {0:0.0} s · Select “Stop and score” when you finish.</value></data>
+  <data name="AssessmentClock" xml:space="preserve"><value>Transcribing and scoring locally · {0:0} s. Two models load on the first assessment.</value></data>
+  <data name="ImportTitle" xml:space="preserve"><value>Import a reading</value></data>
+  <data name="WavFiles" xml:space="preserve"><value>WAV recordings (*.wav)</value></data>
+  <data name="PreparingAudio" xml:space="preserve"><value>Preparing recording…</value></data>
+  <data name="RescoreDone" xml:space="preserve"><value>Original recording rescored with the British reference</value></data>
+  <data name="SavedScore" xml:space="preserve"><value>Assessment saved · Select a word for feedback</value></data>
+  <data name="SavedTake" xml:space="preserve"><value>Recording saved · {0}</value></data>
+  <data name="Playing" xml:space="preserve"><value>Playing · {0}</value></data>
+  <data name="FinishedPlayback" xml:space="preserve"><value>Playback finished · {0}</value></data>
+  <data name="PlaybackStopped" xml:space="preserve"><value>Playback stopped</value></data>
+  <data name="PassageAudio" xml:space="preserve"><value>Passage recording</value></data>
+  <data name="SentenceAudio" xml:space="preserve"><value>Sentence recording</value></data>
+  <data name="FullPassageExample" xml:space="preserve"><value>Passage example</value></data>
+  <data name="FullSentenceExample" xml:space="preserve"><value>Sentence example</value></data>
+  <data name="ExtraSpeech" xml:space="preserve"><value>Extra speech</value></data>
+  <data name="HistoryEmpty" xml:space="preserve"><value>Complete a reading to see your recordings and scores here.</value></data>
+  <data name="HistoryCount" xml:space="preserve"><value>Saved takes · {0}. Select a take to hear it and see the assessment.</value></data>
+  <data name="HistoryStatus" xml:space="preserve"><value>Practice history on this device</value></data>
+  <data name="ReferenceScoreValue" xml:space="preserve"><value>Reference score {0}</value></data>
+  <data name="OverallValue" xml:space="preserve"><value>Overall {0}</value></data>
+  <data name="HistoryOpened" xml:space="preserve"><value>Saved recording opened · {0}</value></data>
+  <data name="MoreHistory" xml:space="preserve"><value>Show more recordings</value></data>
+  <data name="CompareZero" xml:space="preserve"><value>Record the same text twice in Practice to compare your readings.</value></data>
+  <data name="CompareOne" xml:space="preserve"><value>You have one take. Record the same text again in Practice to compare the two.</value></data>
+  <data name="CompareWelcome" xml:space="preserve"><value>Compare two recordings of the same text.</value></data>
+  <data name="SameTake" xml:space="preserve"><value>Both sides have the same recording. Choose two different takes to play them in sequence.</value></data>
+  <data name="MixedReference" xml:space="preserve"><value>These takes use different scoring references. You can rescore the older take with the British reference in Practice.</value></data>
+  <data name="CompareReady" xml:space="preserve"><value>Select the full reading, a sentence or a word to hear it in both takes.</value></data>
+  <data name="WholeSentence" xml:space="preserve"><value>Whole sentence</value></data>
+  <data name="WholePassage" xml:space="preserve"><value>Whole passage</value></data>
+  <data name="ThisSentence" xml:space="preserve"><value>This sentence</value></data>
+  <data name="ScoreAndAccuracy" xml:space="preserve"><value>Reference score {0}  ·  Accuracy {1}</value></data>
+  <data name="NoCorrespondingSection" xml:space="preserve"><value>This take has no aligned audio for the selected sentence.</value></data>
+  <data name="ComparedSection" xml:space="preserve"><value>Sentence score {0:0}  ·  {1:0.00}–{2:0.00} s</value></data>
+  <data name="TranscriptLine" xml:space="preserve"><value>Transcript · {0}</value></data>
+  <data name="ExitConfirm" xml:space="preserve"><value>Closing the app will interrupt this practice session. Do you want to exit?</value></data>
+  <data name="VoiceCori" xml:space="preserve"><value>UK · Cori (female)</value></data>
+  <data name="VoiceNorthern" xml:space="preserve"><value>UK · Northern England (male)</value></data>
+  <data name="VoiceUSMale" xml:space="preserve"><value>US · {0} (male)</value></data>
+  <data name="VoiceUSFemale" xml:space="preserve"><value>US · {0} (female)</value></data>
+  <data name="VoiceUS" xml:space="preserve"><value>US · {0}</value></data>
+  <data name="DiagNoVoice" xml:space="preserve"><value>There is too little speech in the recording.</value></data>
+  <data name="DiagTooQuiet" xml:space="preserve"><value>The microphone level is too low.</value></data>
+  <data name="DiagTooShort" xml:space="preserve"><value>The recording is too short.</value></data>
+  <data name="DiagClipped" xml:space="preserve"><value>The recording is clipping. Lower the input level.</value></data>
+  <data name="DiagNoisy" xml:space="preserve"><value>There is too much background noise.</value></data>
+  <data name="DiagInvalidId" xml:space="preserve"><value>The recording ID is invalid.</value></data>
+  <data name="DiagInvalidReference" xml:space="preserve"><value>Enter an English sentence or passage of up to 6,000 characters.</value></data>
+  <data name="DiagDeviceSetting" xml:space="preserve"><value>Set READALOUD_DEVICE to auto or cpu.</value></data>
+  <data name="DiagCpuChosen" xml:space="preserve"><value>CPU selected</value></data>
+  <data name="DiagNoCuda" xml:space="preserve"><value>No CUDA device was detected.</value></data>
+  <data name="DiagCudaInit" xml:space="preserve"><value>CUDA could not start. This take uses the CPU.</value></data>
+  <data name="DiagOutOfMemory" xml:space="preserve"><value>GPU memory ran low. This session has switched to the CPU.</value></data>
+  <data name="DiagMixedCpu" xml:space="preserve"><value>Some sentences were processed on the CPU after GPU memory ran low.</value></data>
+  <data name="DiagWavFormat" xml:space="preserve"><value>Assessment requires a 16 kHz mono, 16-bit PCM WAV file.</value></data>
+  <data name="DiagTooLong" xml:space="preserve"><value>Each recording can be up to five minutes long. Split longer readings into parts.</value></data>
+  <data name="DiagWavUnreadable" xml:space="preserve"><value>This WAV recording could not be read.</value></data>
+  <data name="DiagLowMatch" xml:space="preserve"><value>The recording is a poor match for the text. Check the sentence and try again.</value></data>
+  <data name="DiagExtraAudio" xml:space="preserve"><value>The recording contains speech beyond the reference text.</value></data>
+  <data name="DiagCannotAlign" xml:space="preserve"><value>The recording could not be aligned reliably. Try reading the whole text again.</value></data>
+  <data name="DiagMissingSentence" xml:space="preserve"><value>This sentence was missing from the transcript and may have been skipped.</value></data>
+  <data name="DiagUnlocated" xml:space="preserve"><value>Too few words matched to locate this sentence reliably.</value></data>
+  <data name="DiagPartial" xml:space="preserve"><value>Only part of the sentence was aligned. Listen back to check it. No score is available.</value></data>
+  <data name="DiagAmbiguous" xml:space="preserve"><value>Two adjacent sentences repeat. The recording could not be matched to a specific occurrence.</value></data>
+  <data name="DiagBadSpan" xml:space="preserve"><value>The audio span is unsuitable for reliable scoring. Listen back to check it.</value></data>
+  <data name="DiagNoEnglish" xml:space="preserve"><value>No English speech could be aligned.</value></data>
+  <data name="DiagPassageExtra" xml:space="preserve"><value>The transcript contains extra speech. The overall passage score is unavailable.</value></data>
+  <data name="DiagConflict" xml:space="preserve"><value>This recording is already linked to another text.</value></data>
+  <data name="DiagDraftMissing" xml:space="preserve"><value>The recording to assess could not be found. Record again or import a WAV file.</value></data>
+  <data name="DiagTakeMissing" xml:space="preserve"><value>This take could not be found.</value></data>
+  <data name="DiagRescoreAudioMissing" xml:space="preserve"><value>The original audio is missing, so this take cannot be rescored.</value></data>
+  <data name="DiagInvalidSession" xml:space="preserve"><value>The local session is invalid.</value></data>
+  <data name="DiagUnknownAction" xml:space="preserve"><value>Unknown operation.</value></data>
+  <data name="DiagHistoryRead" xml:space="preserve"><value>The local practice history could not be read.</value></data>
+  <data name="DiagRequestLength" xml:space="preserve"><value>The request length is invalid.</value></data>
+  <data name="DiagRequestFormat" xml:space="preserve"><value>The request format is invalid.</value></data>
+  <data name="DiagVoiceList" xml:space="preserve"><value>Choose a British example voice from the list.</value></data>
+  <data name="DiagLongWord" xml:space="preserve"><value>A word in the example is longer than 100 characters. Check the text.</value></data>
+  <data name="DiagNoPcm" xml:space="preserve"><value>No playable audio was generated for this text.</value></data>
+  <data name="DiagDemoFailed" xml:space="preserve"><value>The local voice example could not be generated.</value></data>
+  <data name="DiagPrepareFailed" xml:space="preserve"><value>Pronunciations for this text could not be prepared.</value></data>
+  <data name="DiagAssessFailed" xml:space="preserve"><value>Assessment did not finish. Your recording was saved.</value></data>
+  <data name="DiagRescoreFailed" xml:space="preserve"><value>British rescoring did not finish. You can try again later.</value></data>
+  <data name="DiagEngineFiles" xml:space="preserve"><value>Keep the application, runtime folder and engine folder in the same directory.</value></data>
+  <data name="DiagEngineStart" xml:space="preserve"><value>The local assessment process could not start.</value></data>
+  <data name="DiagEngineLog" xml:space="preserve"><value>The local service could not start. See runtime.log in the data folder.</value></data>
+  <data name="DiagEmptyResult" xml:space="preserve"><value>The local service returned an empty result.</value></data>
+  <data name="DiagImportLength" xml:space="preserve"><value>Choose a recording of five minutes or less.</value></data>
+  <data name="DiagEmptyWav" xml:space="preserve"><value>This WAV file contains no audio.</value></data>
+  <data name="DiagMicInterrupted" xml:space="preserve"><value>The recording device disconnected. Select a microphone again.</value></data>
+  <data name="DiagMissingAudio" xml:space="preserve"><value>The audio file could not be found.</value></data>
+  <data name="DiagWordRange" xml:space="preserve"><value>This word has no audio range to play.</value></data>
+  <data name="DiagVoiceSilent" xml:space="preserve"><value>The selected voice did not produce any playable audio.</value></data>
+  <data name="DiagVoiceGone" xml:space="preserve"><value>This voice is no longer available on this device. Choose another example voice.</value></data>
+  <data name="WindowsVoiceError" xml:space="preserve"><value>The selected Windows voice could not play (code {0:X8}).</value></data>
+  <data name="DiffDelete" xml:space="preserve"><value>Possibly skipped · {0}</value></data>
+  <data name="DiffInsert" xml:space="preserve"><value>Possible extra words · {0}</value></data>
+  <data name="DiffReplace" xml:space="preserve"><value>Transcript difference · {0}</value></data>
+  <data name="ReasonSkipped" xml:space="preserve"><value>You may have skipped “{0}”.</value></data>
+  <data name="ReasonReviewCount" xml:space="preserve"><value>Sentences to review · {0}. The passage score is pending.</value></data>
+  <data name="SampleWorth" xml:space="preserve"><value>Worth it</value></data>
+  <data name="SampleMessage" xml:space="preserve"><value>Leave a message</value></data>
+  <data name="SampleTickets" xml:space="preserve"><value>Three tickets</value></data>
+  <data name="SampleStation" xml:space="preserve"><value>The station</value></data>
+  <data name="SampleTea" xml:space="preserve"><value>A cup of tea</value></data>
+  <data name="BackToPassage" xml:space="preserve"><value>Back to passage</value></data>
+  <data name="RetakeOnly" xml:space="preserve"><value>Practise this sentence</value></data>
+  <data name="ImportOwnTake" xml:space="preserve"><value>Import my recording</value></data>
+  <data name="RetakeComparison" xml:space="preserve"><value>Compare with the original</value></data>
+  <data name="BaselinePlay" xml:space="preserve"><value>Hear the original sentence</value></data>
+  <data name="BaselinePair" xml:space="preserve"><value>Original → retake</value></data>
+  <data name="HearContext" xml:space="preserve"><value>Hear in context</value></data>
+  <data name="ReferenceRecording" xml:space="preserve"><value>Model reading</value></data>
+  <data name="SourceHelp" xml:space="preserve"><value>Choose a voice or a recording for this text.</value></data>
+  <data name="ImportModel" xml:space="preserve"><value>Import model WAV</value></data>
+  <data name="RecordThisSentence" xml:space="preserve"><value>Record this sentence</value></data>
+  <data name="RetakeNumber" xml:space="preserve"><value>Sentence {0} retake</value></data>
+  <data name="RetakeReady" xml:space="preserve"><value>Sentence {0} is ready. Record it or import your take.</value></data>
+  <data name="ReturnedToPassage" xml:space="preserve"><value>Back at sentence {0} in the passage.</value></data>
+  <data name="RetakeUnscored" xml:space="preserve"><value>Alignment needs review. No score is available.</value></data>
+  <data name="RetakeTotal" xml:space="preserve"><value>{0} points · {1}</value></data>
+  <data name="OriginalTakeLabel" xml:space="preserve"><value>Original passage take</value></data>
+  <data name="SentenceTakeLabel" xml:space="preserve"><value>Sentence retake</value></data>
+  <data name="OriginalNotRecorded" xml:space="preserve"><value>No recording of the original passage yet.</value></data>
+  <data name="SentenceNotRecorded" xml:space="preserve"><value>Record this sentence to compare the word and pauses.</value></data>
+  <data name="ImportedVoice" xml:space="preserve"><value>WAV · {0}</value></data>
+  <data name="UnlocatedWord" xml:space="preserve"><value>This word could not be located reliably in the model audio. Try the sentence.</value></data>
+  <data name="UnlocatedSentence" xml:space="preserve"><value>This sentence could not be located reliably. Play the whole model recording.</value></data>
+  <data name="ContextHelp" xml:space="preserve"><value>Hear the word and its neighbours from the full model sentence.</value></data>
+  <data name="ImportedWordHelp" xml:space="preserve"><value>Play this word from the imported recording.</value></data>
+  <data name="AlignedCoverage" xml:space="preserve"><value>{0} of {1} words located</value></data>
+  <data name="ImportModelTitle" xml:space="preserve"><value>Choose a model WAV of the current text</value></data>
+  <data name="AligningExample" xml:space="preserve"><value>Locating sentences and words in the model recording…</value></data>
+  <data name="ImportedExample" xml:space="preserve"><value>Imported {0}. Located {1} of {2} words.</value></data>
+  <data name="ContextExcerpt" xml:space="preserve"><value>In context · {0}</value></data>
+  <data name="DiagInvalidOrigin" xml:space="preserve"><value>This retake does not match its passage.</value></data>
+  <data name="DiagWrongModel" xml:space="preserve"><value>The model audio could not be matched to the current text.</value></data>
+  <data name="DiagMissingModel" xml:space="preserve"><value>The imported model recording could not be found.</value></data>
+  <data name="DiagTimingModel" xml:space="preserve"><value>Timing the model recording failed. Please try again.</value></data>
+  <data name="RetakeWordFinding" xml:space="preserve"><value>Target /{0}/, possibly heard as /{1}/.</value></data>
+</root>

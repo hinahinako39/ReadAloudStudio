@@ -1,0 +1,20 @@
+<Window x:Class="ReadAloudStudio.LanguageWindow" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Width="360" SizeToContent="Height" ResizeMode="NoResize"
+        WindowStartupLocation="CenterOwner" ShowInTaskbar="False" Background="{StaticResource PageSurface}" Foreground="{StaticResource Ink}"
+        FontSize="14" FontFamily="Segoe UI, Microsoft YaHei UI" UseLayoutRounding="True">
+  <StackPanel Margin="18">
+    <Border Style="{StaticResource Card}">
+      <StackPanel>
+        <TextBlock x:Name="Prompt" Style="{StaticResource PanelTitle}" TextWrapping="Wrap" Margin="0,0,0,10"/>
+        <RadioButton x:Name="EnglishOption" GroupName="Languages" Content="English" Padding="5,3" Margin="0,3"
+                     VerticalContentAlignment="Center" Checked="OptionChanged"/>
+        <RadioButton x:Name="ChineseOption" GroupName="Languages" Content="简体中文" Padding="5,3" Margin="0,3"
+                     VerticalContentAlignment="Center" Checked="OptionChanged"/>
+      </StackPanel>
+    </Border>
+    <StackPanel Orientation="Horizontal" Margin="0,14,0,0" HorizontalAlignment="Right">
+      <Button x:Name="CancelChoice" IsCancel="True" Margin="0,0,7,0" MinWidth="75"/>
+      <Button x:Name="ApplyChoice" Style="{StaticResource Primary}" IsDefault="True" MinWidth="78" Click="ConfirmClick"/>
+    </StackPanel>
+  </StackPanel>
+</Window>

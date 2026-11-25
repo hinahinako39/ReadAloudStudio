@@ -1,0 +1,47 @@
+OpenPronounce
+Copyright (c) 2025-2026 Jean-François Lépine
+
+Shipped with the package
+
+  CMUdict, the Carnegie Mellon University Pronouncing Dictionary
+  openpronounce/data/cmudict.dict.gz
+  Copyright (C) 1993-2015 Carnegie Mellon University. BSD-style licence,
+  see openpronounce/data/cmudict.LICENSE.
+
+  English models, openpronounce/models/*.json
+  Trained on speechocean762 (Zhang et al., 2021), CC BY 4.0,
+  https://www.openslr.org/101/
+
+  The settings of the other languages (openpronounce/languages.py) and their
+  native references (openpronounce/models/native_*.json) were computed
+  on FLEURS (Conneau et al., 2022), CC BY 4.0,
+  https://huggingface.co/datasets/google/fleurs
+
+Measured on, not redistributed (benchmarks/README.md)
+
+  VoxPopuli (Wang et al., 2021), CC0
+  CIEMPIESS Test, CC BY-SA 4.0
+  CORAA-MUPE-ASR, CC BY-SA 4.0
+  Heroico, West Point (OpenSLR 39), Apache-2.0
+  L2FOC (De Paolis et al.), ORTOLANG
+
+Downloaded at run time, not redistributed
+
+  facebook/wav2vec2-lv-60-espeak-cv-ft and facebook/wav2vec2-large-960h,
+  Apache-2.0, from the Hugging Face Hub.
+
+Optional, under their own copyleft licence
+
+  espeak-ng (GPL-3.0-or-later): pronunciation of every language other than
+  English. Run as a separate program, neither imported nor linked.
+  piper-tts (GPL-3.0): offline reference voice.
+
+Web demo only
+
+  Microphone picker and auto-stop toggle (static/audio.js, static/ui.js,
+  templates/index.html), contributed under the MIT licence.
+  Copyright (c) 2026 Ronald Rodrigues Farias. See LICENSE-MIT-0.x.
+
+
+  static/assets/mouths/HunanBeanCMU39, from Papagayo-NG
+  https://github.com/morevnaproject-org/papagayo-ng

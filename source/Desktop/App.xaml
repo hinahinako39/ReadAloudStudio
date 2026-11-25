@@ -1,0 +1,107 @@
+<Application x:Class="ReadAloudStudio.App" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" StartupUri="MainWindow.xaml">
+  <Application.Resources>
+    <SolidColorBrush x:Key="Ink" Color="#203331"/>
+    <SolidColorBrush x:Key="Muted" Color="#50645E"/>
+    <SolidColorBrush x:Key="Line" Color="#D7E0D9"/>
+    <SolidColorBrush x:Key="PageSurface" Color="#F3F4EE"/>
+    <SolidColorBrush x:Key="SoftSurface" Color="#F3F6F2"/>
+    <SolidColorBrush x:Key="Masthead" Color="#173D36"/>
+    <SolidColorBrush x:Key="HeaderText" Color="#D4E5DD"/>
+    <SolidColorBrush x:Key="Accent" Color="#1C6954"/>
+    <SolidColorBrush x:Key="AccentSoft" Color="#E2F0E7"/>
+    <SolidColorBrush x:Key="WaveInk" Color="#A7C3B5"/>
+    <SolidColorBrush x:Key="ReviewInk" Color="#834A15"/>
+    <SolidColorBrush x:Key="ReviewFill" Color="#FBEDD7"/>
+    <SolidColorBrush x:Key="PronunciationInk" Color="#9C324A"/>
+    <SolidColorBrush x:Key="PronunciationFill" Color="#FBEBEF"/>
+    <Geometry x:Key="IconMic">M9,5 A3,3 0 0 1 15,5 L15,12 A3,3 0 0 1 9,12 Z M5,11 L5,12 A7,7 0 0 0 19,12 L19,11 M12,19 L12,22 M8,22 L16,22</Geometry>
+    <Geometry x:Key="IconStop">M5,5 L19,5 19,19 5,19 Z</Geometry>
+    <Geometry x:Key="IconRetake">M3,5 L3,11 9,11 M3.5,10 A8,8 0 1 1 6,18 M11,8 L15,12 11,16</Geometry>
+    <Geometry x:Key="IconPlay">M7,4 L20,12 7,20 Z</Geometry>
+    <Geometry x:Key="IconContext">M3,9 L3,15 M7,5 L7,19 M12,8 L12,16 M17,3 L17,21 M21,9 L21,15</Geometry>
+    <Geometry x:Key="IconSpeaker">M3,9 L7,9 12,5 12,19 7,15 3,15 Z M15,8 Q20,12 15,16 M18,4 Q26,12 18,20</Geometry>
+    <Geometry x:Key="IconHeadphones">M3,15 L3,12 A9,9 0 0 1 21,12 L21,15 M3,13 L7,13 7,20 5,20 Q3,20 3,18 Z M21,13 L17,13 17,20 19,20 Q21,20 21,18 Z</Geometry>
+    <Geometry x:Key="IconImport">M3,19 L3,21 21,21 21,19 M12,2 L12,15 M7,10 L12,15 17,10</Geometry>
+    <Geometry x:Key="IconMusic">M9,17 L9,5 20,3 20,15 M9,8 L20,6 M9,17 A3,2.5 0 1 1 3,17 A3,2.5 0 1 1 9,17 M20,15 A3,2.5 0 1 1 14,15 A3,2.5 0 1 1 20,15</Geometry>
+    <Geometry x:Key="IconBack">M20,12 L4,12 M10,6 L4,12 10,18</Geometry>
+    <DataTemplate x:Key="ActionLabel">
+      <StackPanel Orientation="Horizontal">
+        <Viewbox Width="15" Height="15" Margin="0,0,6,0" VerticalAlignment="Center" IsHitTestVisible="False">
+          <Canvas Width="24" Height="24"><Path Data="{Binding Tag,RelativeSource={RelativeSource AncestorType=Button}}"
+            Stroke="{Binding Foreground,RelativeSource={RelativeSource AncestorType=Button}}" StrokeThickness="1.8"
+            StrokeStartLineCap="Round" StrokeEndLineCap="Round" StrokeLineJoin="Round"/></Canvas>
+        </Viewbox>
+        <TextBlock Text="{Binding}" VerticalAlignment="Center"/>
+      </StackPanel>
+    </DataTemplate>
+    <Style TargetType="TextBlock">
+      <Setter Property="VerticalAlignment" Value="Center"/>
+    </Style>
+    <Style x:Key="Caption" TargetType="TextBlock" BasedOn="{StaticResource {x:Type TextBlock}}">
+      <Setter Property="Foreground" Value="{StaticResource Muted}"/><Setter Property="FontSize" Value="13"/>
+    </Style>
+    <Style x:Key="PanelTitle" TargetType="TextBlock" BasedOn="{StaticResource {x:Type TextBlock}}">
+      <Setter Property="FontSize" Value="20"/><Setter Property="FontWeight" Value="SemiBold"/>
+    </Style>
+    <Style x:Key="Card" TargetType="Border">
+      <Setter Property="Background" Value="White"/><Setter Property="BorderBrush" Value="{StaticResource Line}"/>
+      <Setter Property="BorderThickness" Value="1"/><Setter Property="CornerRadius" Value="12"/>
+      <Setter Property="Padding" Value="20,18"/>
+    </Style>
+    <Style x:Key="KeyboardFocus" TargetType="Control">
+      <Setter Property="Template"><Setter.Value><ControlTemplate>
+        <Rectangle Margin="2" RadiusX="4" RadiusY="4" Stroke="{DynamicResource {x:Static SystemColors.HighlightBrushKey}}"
+                   StrokeThickness="2" StrokeDashArray="2 1"/>
+      </ControlTemplate></Setter.Value></Setter>
+    </Style>
+    <Style TargetType="Button">
+      <Setter Property="Background" Value="White"/><Setter Property="Foreground" Value="{StaticResource Ink}"/>
+      <Setter Property="Padding" Value="12,6"/><Setter Property="BorderThickness" Value="1"/>
+      <Setter Property="BorderBrush" Value="{StaticResource Line}"/><Setter Property="Cursor" Value="Hand"/>
+      <Setter Property="FocusVisualStyle" Value="{StaticResource KeyboardFocus}"/>
+      <Setter Property="VerticalContentAlignment" Value="Center"/><Setter Property="HorizontalContentAlignment" Value="Center"/>
+      <Setter Property="Template"><Setter.Value><ControlTemplate TargetType="Button">
+        <Border x:Name="B" Background="{TemplateBinding Background}" BorderBrush="{TemplateBinding BorderBrush}"
+                BorderThickness="{TemplateBinding BorderThickness}" CornerRadius="6" Padding="{TemplateBinding Padding}">
+          <ContentPresenter HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}" VerticalAlignment="{TemplateBinding VerticalContentAlignment}" RecognizesAccessKey="True"/>
+        </Border>
+        <ControlTemplate.Triggers>
+          <Trigger Property="IsMouseOver" Value="True"><Setter TargetName="B" Property="BorderBrush" Value="{StaticResource Accent}"/></Trigger>
+          <Trigger Property="IsPressed" Value="True"><Setter TargetName="B" Property="Opacity" Value="0.72"/></Trigger>
+          <Trigger Property="IsEnabled" Value="False"><Setter TargetName="B" Property="Opacity" Value="0.5"/></Trigger>
+        </ControlTemplate.Triggers>
+      </ControlTemplate></Setter.Value></Setter>
+    </Style>
+    <Style x:Key="Primary" TargetType="Button" BasedOn="{StaticResource {x:Type Button}}">
+      <Setter Property="Background" Value="{StaticResource Accent}"/><Setter Property="BorderBrush" Value="{StaticResource Accent}"/>
+      <Setter Property="Foreground" Value="White"/><Setter Property="FontWeight" Value="SemiBold"/>
+      <Setter Property="Padding" Value="17,7"/>
+    </Style>
+    <Style x:Key="TintButton" TargetType="Button" BasedOn="{StaticResource {x:Type Button}}">
+      <Setter Property="Background" Value="{StaticResource AccentSoft}"/><Setter Property="Foreground" Value="{StaticResource Accent}"/>
+      <Setter Property="BorderBrush" Value="{StaticResource AccentSoft}"/><Setter Property="FontWeight" Value="SemiBold"/>
+    </Style>
+    <Style x:Key="Nav" TargetType="Button" BasedOn="{StaticResource {x:Type Button}}">
+      <Setter Property="Background" Value="Transparent"/><Setter Property="BorderBrush" Value="Transparent"/>
+      <Setter Property="Foreground" Value="{StaticResource HeaderText}"/>
+      <Setter Property="Padding" Value="13,6"/><Setter Property="Margin" Value="0,0,4,0"/>
+    </Style>
+    <Style TargetType="ComboBox">
+      <Setter Property="MinHeight" Value="32"/><Setter Property="VerticalContentAlignment" Value="Center"/>
+      <Setter Property="Padding" Value="8,4"/><Setter Property="MaxDropDownHeight" Value="280"/>
+      <Setter Property="Background" Value="White"/><Setter Property="BorderBrush" Value="{StaticResource Line}"/>
+      <Setter Property="Foreground" Value="{StaticResource Ink}"/>
+    </Style>
+    <Style x:Key="Meter" TargetType="ProgressBar">
+      <Setter Property="Foreground" Value="{StaticResource Accent}"/><Setter Property="Background" Value="{StaticResource AccentSoft}"/>
+      <Setter Property="Height" Value="5"/><Setter Property="Focusable" Value="False"/>
+      <Setter Property="Template"><Setter.Value><ControlTemplate TargetType="ProgressBar">
+        <Grid x:Name="PART_Track" ClipToBounds="True">
+          <Border Background="{TemplateBinding Background}" CornerRadius="2"/>
+          <Border x:Name="PART_Indicator" HorizontalAlignment="Left" Background="{TemplateBinding Foreground}" CornerRadius="2"/>
+        </Grid>
+      </ControlTemplate></Setter.Value></Setter>
+    </Style>
+  </Application.Resources>
+</Application>

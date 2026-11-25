@@ -1,0 +1,313 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <resheader name="resmimetype"><value>text/microsoft-resx</value></resheader>
+  <resheader name="version"><value>2.0</value></resheader>
+  <resheader name="reader"><value>System.Resources.ResXResourceReader, System.Windows.Forms</value></resheader>
+  <resheader name="writer"><value>System.Resources.ResXResourceWriter, System.Windows.Forms</value></resheader>
+  <data name="AppName" xml:space="preserve"><value>英语跟读</value></data>
+  <data name="WindowTitle" xml:space="preserve"><value>英语跟读 · 本地发音精评</value></data>
+  <data name="NavPractice" xml:space="preserve"><value>跟读练习</value></data>
+  <data name="NavCompare" xml:space="preserve"><value>两次对比</value></data>
+  <data name="NavHistory" xml:space="preserve"><value>练习记录</value></data>
+  <data name="LanguageTitle" xml:space="preserve"><value>界面语言</value></data>
+  <data name="LanguageHelp" xml:space="preserve"><value>选择界面语言</value></data>
+  <data name="LanguageApply" xml:space="preserve"><value>应用</value></data>
+  <data name="Cancel" xml:space="preserve"><value>取消</value></data>
+  <data name="DetectDevice" xml:space="preserve"><value>正在检测计算设备…</value></data>
+  <data name="EditTitle" xml:space="preserve"><value>更换跟读文本</value></data>
+  <data name="ReferenceInput" xml:space="preserve"><value>英文跟读文本</value></data>
+  <data name="ApplyText" xml:space="preserve"><value>使用这段文本</value></data>
+  <data name="TextLimits" xml:space="preserve"><value>最多 6000 字符 · 录音最长 5 分钟</value></data>
+  <data name="ChangeText" xml:space="preserve"><value>换句 / 换段</value></data>
+  <data name="ReadingText" xml:space="preserve"><value>跟读文本</value></data>
+  <data name="OriginalAudio" xml:space="preserve"><value>原声</value></data>
+  <data name="StartRecording" xml:space="preserve"><value>开始录音</value></data>
+  <data name="ExampleSentence" xml:space="preserve"><value>听整句示范</value></data>
+  <data name="ExamplePassage" xml:space="preserve"><value>听整段示范</value></data>
+  <data name="PlayOriginal" xml:space="preserve"><value>听原声</value></data>
+  <data name="PlaySection" xml:space="preserve"><value>听本句</value></data>
+  <data name="ImportWav" xml:space="preserve"><value>导入 WAV</value></data>
+  <data name="RetryScoring" xml:space="preserve"><value>重试评测</value></data>
+  <data name="InputLevel" xml:space="preserve"><value>麦克风输入音量</value></data>
+  <data name="Microphone" xml:space="preserve"><value>录音设备</value></data>
+  <data name="NoMicSelected" xml:space="preserve"><value>未选择麦克风</value></data>
+  <data name="Refresh" xml:space="preserve"><value>刷新</value></data>
+  <data name="ExpandText" xml:space="preserve"><value>展开全文</value></data>
+  <data name="CollapseText" xml:space="preserve"><value>收起全文</value></data>
+  <data name="FullTextPreview" xml:space="preserve"><value>全文预览</value></data>
+  <data name="JumpHint" xml:space="preserve"><value>点句子跳转</value></data>
+  <data name="MissingHelp" xml:space="preserve"><value>带删除线的词表示疑似漏读</value></data>
+  <data name="SentenceReviewLegend" xml:space="preserve"><value>整句待核对</value></data>
+  <data name="TranscriptTitle" xml:space="preserve"><value>本地转写</value></data>
+  <data name="SentenceTranscript" xml:space="preserve"><value>本句转写</value></data>
+  <data name="FullTranscript" xml:space="preserve"><value>查看整段转写</value></data>
+  <data name="NextFlag" xml:space="preserve"><value>下一处标记</value></data>
+  <data name="NextFlagHelp" xml:space="preserve"><value>按全文顺序查看标记词，到末尾后回到第一处</value></data>
+  <data name="FeedbackTitle" xml:space="preserve"><value>发音反馈</value></data>
+  <data name="SelectWord" xml:space="preserve"><value>选择单词</value></data>
+  <data name="VoiceIpaHelp" xml:space="preserve"><value>所选示范声音的独立词读音</value></data>
+  <data name="PlayWord" xml:space="preserve"><value>回听这个词</value></data>
+  <data name="WordExample" xml:space="preserve"><value>听示范发音</value></data>
+  <data name="WordExampleHelp" xml:space="preserve"><value>用所选声音朗读这个词</value></data>
+  <data name="Voice" xml:space="preserve"><value>示范声音</value></data>
+  <data name="VoiceHelp" xml:space="preserve"><value>这个声音用于单词和全文示范</value></data>
+  <data name="PlayExtra" xml:space="preserve"><value>回听多出的片段</value></data>
+  <data name="ReadingScore" xml:space="preserve"><value>朗读评分</value></data>
+  <data name="Total" xml:space="preserve"><value>总分</value></data>
+  <data name="Accuracy" xml:space="preserve"><value>准确</value></data>
+  <data name="Fluency" xml:space="preserve"><value>流利</value></data>
+  <data name="Prosody" xml:space="preserve"><value>韵律</value></data>
+  <data name="RescoreBritish" xml:space="preserve"><value>按英式重评</value></data>
+  <data name="RescoreHelp" xml:space="preserve"><value>用这次的原声重新计算英式评分</value></data>
+  <data name="PauseHelp" xml:space="preserve"><value>按可靠的相邻词边界估算。句内超过 0.25 秒计一次，句间单独展示。</value></data>
+  <data name="ScoringBasis" xml:space="preserve"><value>评分依据</value></data>
+  <data name="CompareTitle" xml:space="preserve"><value>同一文本的两次朗读</value></data>
+  <data name="PlaybackRange" xml:space="preserve"><value>回听范围</value></data>
+  <data name="TakeA" xml:space="preserve"><value>录音 A</value></data>
+  <data name="TakeB" xml:space="preserve"><value>录音 B</value></data>
+  <data name="PlayA" xml:space="preserve"><value>听录音 A</value></data>
+  <data name="PlayB" xml:space="preserve"><value>听录音 B</value></data>
+  <data name="PlayPair" xml:space="preserve"><value>连续回听 A → B</value></data>
+  <data name="StopPlayback" xml:space="preserve"><value>停止回放</value></data>
+  <data name="StartingService" xml:space="preserve"><value>正在启动本机服务…</value></data>
+  <data name="PreviousSentence" xml:space="preserve"><value>上一句</value></data>
+  <data name="NextSentence" xml:space="preserve"><value>下一句</value></data>
+  <data name="ParkExample" xml:space="preserve"><value>雨后的公园（3 句）</value></data>
+  <data name="VoiceSwitched" xml:space="preserve"><value>示范声音已切换 · {0}</value></data>
+  <data name="PendingRecovered" xml:space="preserve"><value>上次录音已保留。点击「重试评测」继续。</value></data>
+  <data name="NoMicReady" xml:space="preserve"><value>未检测到可用麦克风。可刷新设备或导入 WAV 练习。</value></data>
+  <data name="Ready" xml:space="preserve"><value>已就绪 · 录音和评测都在本机完成</value></data>
+  <data name="StopAndScore" xml:space="preserve"><value>结束并评测</value></data>
+  <data name="OpeningMic" xml:space="preserve"><value>正在打开麦克风…</value></data>
+  <data name="Assessing" xml:space="preserve"><value>正在评测…</value></data>
+  <data name="ReadAgain" xml:space="preserve"><value>再读一次</value></data>
+  <data name="NoMicImport" xml:space="preserve"><value>没有可用的录音设备。可以导入 WAV。</value></data>
+  <data name="MicRefreshed" xml:space="preserve"><value>录音设备已刷新</value></data>
+  <data name="SavePrefsFailed" xml:space="preserve"><value>设置保存失败。{0}</value></data>
+  <data name="LocalGpu" xml:space="preserve"><value>本地 GPU · {0}</value></data>
+  <data name="LocalCpu" xml:space="preserve"><value>本地 CPU</value></data>
+  <data name="ActivePage" xml:space="preserve"><value>当前页面</value></data>
+  <data name="InvalidText" xml:space="preserve"><value>请输入英文句子或段落，最多 6000 个字符。</value></data>
+  <data name="TextReady" xml:space="preserve"><value>跟读文本已选定，可以一次读完。</value></data>
+  <data name="PrepareFailed" xml:space="preserve"><value>未能准备分句和词典读音。{0}</value></data>
+  <data name="PlayPassage" xml:space="preserve"><value>听整段</value></data>
+  <data name="PlaySentence" xml:space="preserve"><value>听整句</value></data>
+  <data name="ScoredCount" xml:space="preserve"><value>{0} / {1} 句已评分</value></data>
+  <data name="PassageScoreValue" xml:space="preserve"><value>整段参考分 {0}</value></data>
+  <data name="PassageReview" xml:space="preserve"><value>整段待核对</value></data>
+  <data name="WeightedHelp" xml:space="preserve"><value>按各分句的原文词数加权平均</value></data>
+  <data name="NoSpeech" xml:space="preserve"><value>未识别出清晰语音。</value></data>
+  <data name="MarkedHint" xml:space="preserve"><value>点标记词看反馈</value></data>
+  <data name="ViewFlag" xml:space="preserve"><value>查看标记词</value></data>
+  <data name="PronunciationCount" xml:space="preserve"><value>疑似发音偏差 {0} 处</value></data>
+  <data name="MissingCount" xml:space="preserve"><value>疑似漏词 {0} 处</value></data>
+  <data name="GoToSentence" xml:space="preserve"><value>跳到第 {0} 句</value></data>
+  <data name="PossibleSkip" xml:space="preserve"><value>疑似漏读</value></data>
+  <data name="NeedsReview" xml:space="preserve"><value>待核对</value></data>
+  <data name="PossibleOmission" xml:space="preserve"><value>疑似漏词</value></data>
+  <data name="PronunciationFlag" xml:space="preserve"><value>疑似发音偏差</value></data>
+  <data name="PhoneAlternative" xml:space="preserve"><value>目标 /{0}/，可能更接近 /{1}/</value></data>
+  <data name="SentenceNumber" xml:space="preserve"><value>第 {0} 句</value></data>
+  <data name="SentencePosition" xml:space="preserve"><value>第 {0} / {1} 句</value></data>
+  <data name="TranscriptPending" xml:space="preserve"><value>录音结束后显示识别文本。</value></data>
+  <data name="NoClearSpeech" xml:space="preserve"><value>未识别出清晰的语音。</value></data>
+  <data name="SectionNoSpeech" xml:space="preserve"><value>未定位到本句的清晰转写。</value></data>
+  <data name="ExtraAlignment" xml:space="preserve"><value>音素对齐提示有原句以外的片段</value></data>
+  <data name="Differences" xml:space="preserve"><value>有差异</value></data>
+  <data name="British" xml:space="preserve"><value>英式</value></data>
+  <data name="LegacyUS" xml:space="preserve"><value>旧版美式</value></data>
+  <data name="SentenceScore" xml:space="preserve"><value>整句评分</value></data>
+  <data name="NumberedScore" xml:space="preserve"><value>第 {0} 句评分</value></data>
+  <data name="BasisLegacy" xml:space="preserve"><value>这条记录按旧版美式词典评分。点「按英式重评」可用原来的录音更新分数。</value></data>
+  <data name="BasisUK" xml:space="preserve"><value>音素按英式参考词典与原声对齐。词典收录多种读法时，使用与该处原声更吻合的读法。</value></data>
+  <data name="BasisModel" xml:space="preserve"><value>四项评分综合音素匹配、语速、停顿、音高和音量。英语评分模型沿用原训练权重，英式参考分尚未用独立的英国人工评分验证。</value></data>
+  <data name="ScorePending" xml:space="preserve"><value>完成一次朗读后显示。</value></data>
+  <data name="SectionTime" xml:space="preserve"><value>本句原声 {0:0.00}–{1:0.00} 秒</value></data>
+  <data name="ElapsedScore" xml:space="preserve"><value>评测 {0:0.0} 秒</value></data>
+  <data name="WordPauses" xml:space="preserve"><value>词间停顿 {0} 处 · 最长约 {1:0.00} 秒（{2} → {3}）</value></data>
+  <data name="NoWordPauses" xml:space="preserve"><value>已定位的相邻词之间未测到超过 0.25 秒的停顿</value></data>
+  <data name="BetweenSentences" xml:space="preserve"><value>与上一句间隔约 {0:0.00} 秒</value></data>
+  <data name="WordHelp" xml:space="preserve"><value>查看 {0} 的发音</value></data>
+  <data name="SelectWordName" xml:space="preserve"><value>查看单词 {0}</value></data>
+  <data name="SelectForAudio" xml:space="preserve"><value>点选目标句中的词，查看对应原声。</value></data>
+  <data name="NoAlignedWord" xml:space="preserve"><value>这次未能定位可回听的单词。可以听整句，或再读一次。</value></data>
+  <data name="MissingFeedback" xml:space="preserve"><value>音素对齐提示可能漏读了这个词。请听完整句核对。</value></data>
+  <data name="UnreliableFeedback" xml:space="preserve"><value>这次录音不适合给出可靠的发音结论。请核对原句，试听后重录。</value></data>
+  <data name="GuessedFeedback" xml:space="preserve"><value>该词的目标读音由词典规则推测，建议以原声为准。</value></data>
+  <data name="ClearFeedback" xml:space="preserve"><value>这次未标记该词有明显偏差。可回听它在句子里的读音。</value></data>
+  <data name="UncertainFeedback" xml:space="preserve"><value>这个词值得再听一次。模型对具体偏差的判断有限，可以先对比示范再重读。</value></data>
+  <data name="CueTh" xml:space="preserve"><value>试着把舌尖轻放在上下齿之间，向外送气。</value></data>
+  <data name="CueVoicedTh" xml:space="preserve"><value>舌尖轻放在上下齿之间，送气时声带振动。</value></data>
+  <data name="CueKit" xml:space="preserve"><value>试着放松嘴角，用较短的元音。</value></data>
+  <data name="CueFleece" xml:space="preserve"><value>舌面前部向硬腭抬高，保持元音清晰。</value></data>
+  <data name="CueTrap" xml:space="preserve"><value>下颌多打开一点，舌身靠前。</value></data>
+  <data name="CueNurse" xml:space="preserve"><value>舌身放在口腔中部，平稳地发出这个长元音。</value></data>
+  <data name="CuePalm" xml:space="preserve"><value>下颌打开，舌身靠后，把元音延长。</value></data>
+  <data name="CueLot" xml:space="preserve"><value>嘴唇略收圆，发出短促的后元音。</value></data>
+  <data name="CueGoat" xml:space="preserve"><value>从中部元音滑向 /ʊ/，嘴唇逐渐收圆。</value></data>
+  <data name="CueL" xml:space="preserve"><value>舌尖轻触上齿龈，让气流从舌头两侧通过。</value></data>
+  <data name="CueR" xml:space="preserve"><value>把舌身稍向后收，舌尖与上齿龈留出空隙。</value></data>
+  <data name="CueV" xml:space="preserve"><value>上齿轻触下唇，送气摩擦时让声带振动。</value></data>
+  <data name="CueF" xml:space="preserve"><value>上齿轻触下唇，平稳地送气。</value></data>
+  <data name="CueW" xml:space="preserve"><value>先收圆双唇，再滑向后面的元音。</value></data>
+  <data name="CueS" xml:space="preserve"><value>舌尖靠近上齿龈，让气流从舌面中央的窄缝通过。</value></data>
+  <data name="CueZ" xml:space="preserve"><value>舌尖靠近上齿龈，保持摩擦并让声带振动。</value></data>
+  <data name="CueSh" xml:space="preserve"><value>舌面向上齿龈后方抬起，双唇微微收圆。</value></data>
+  <data name="CueNg" xml:space="preserve"><value>抬起舌后部轻触软腭，让气流从鼻腔出来。</value></data>
+  <data name="CueGeneral" xml:space="preserve"><value>先听原词，再连回整句练一次。</value></data>
+  <data name="SoundFeedback" xml:space="preserve"><value>目标音 /{0}/，这次可能更接近 /{1}/。{2}</value></data>
+  <data name="ListenBack" xml:space="preserve"><value>请回听</value></data>
+  <data name="UKExample" xml:space="preserve"><value>英音</value></data>
+  <data name="USExample" xml:space="preserve"><value>美音</value></data>
+  <data name="ScoringIpa" xml:space="preserve"><value>评分参考（{0}） /{1}/</value></data>
+  <data name="UnknownBefore" xml:space="preserve"><value>词典未收录这个词，示范由本机语音合成。</value></data>
+  <data name="ListenBefore" xml:space="preserve"><value>可先听单词示范，录音后再对照自己的读音。</value></data>
+  <data name="TimeRange" xml:space="preserve"><value>{0:0.00}–{1:0.00} 秒</value></data>
+  <data name="NotLocated" xml:space="preserve"><value>本句未定位</value></data>
+  <data name="Seconds" xml:space="preserve"><value>{0:0.00} 秒</value></data>
+  <data name="ShortSeconds" xml:space="preserve"><value>{0:0.0} 秒</value></data>
+  <data name="TargetPhone" xml:space="preserve"><value>目标 /{0}/</value></data>
+  <data name="RecordingStarted" xml:space="preserve"><value>正在录音 · 读完后点击「结束并评测」</value></data>
+  <data name="MicOpenError" xml:space="preserve"><value>无法打开麦克风。请检查 Windows 麦克风权限或刷新设备。</value></data>
+  <data name="RecordingClock" xml:space="preserve"><value>正在录音 · {0:0.0} 秒   读完后点击「结束并评测」</value></data>
+  <data name="AssessmentClock" xml:space="preserve"><value>正在本机转写并评测 · {0:0} 秒   首次评测需要加载两个模型。</value></data>
+  <data name="ImportTitle" xml:space="preserve"><value>导入本地朗读录音</value></data>
+  <data name="WavFiles" xml:space="preserve"><value>WAV 录音 (*.wav)</value></data>
+  <data name="PreparingAudio" xml:space="preserve"><value>正在准备录音…</value></data>
+  <data name="RescoreDone" xml:space="preserve"><value>已用原声完成英式重评</value></data>
+  <data name="SavedScore" xml:space="preserve"><value>评测已保存 · 点击单词查看反馈</value></data>
+  <data name="SavedTake" xml:space="preserve"><value>录音已保存 · {0}</value></data>
+  <data name="Playing" xml:space="preserve"><value>正在播放 · {0}</value></data>
+  <data name="FinishedPlayback" xml:space="preserve"><value>播放结束 · {0}</value></data>
+  <data name="PlaybackStopped" xml:space="preserve"><value>已停止回放</value></data>
+  <data name="PassageAudio" xml:space="preserve"><value>整段原声</value></data>
+  <data name="SentenceAudio" xml:space="preserve"><value>整句原声</value></data>
+  <data name="FullPassageExample" xml:space="preserve"><value>整段示范</value></data>
+  <data name="FullSentenceExample" xml:space="preserve"><value>整句示范</value></data>
+  <data name="ExtraSpeech" xml:space="preserve"><value>原句以外的片段</value></data>
+  <data name="HistoryEmpty" xml:space="preserve"><value>完成一次朗读后，录音与评测结果会保存在这里。</value></data>
+  <data name="HistoryCount" xml:space="preserve"><value>{0} 次练习 · 点击记录查看原声与评测</value></data>
+  <data name="HistoryStatus" xml:space="preserve"><value>本机练习记录</value></data>
+  <data name="ReferenceScoreValue" xml:space="preserve"><value>参考分 {0}</value></data>
+  <data name="OverallValue" xml:space="preserve"><value>总分 {0}</value></data>
+  <data name="HistoryOpened" xml:space="preserve"><value>已打开历史录音 · {0}</value></data>
+  <data name="MoreHistory" xml:space="preserve"><value>显示更多记录</value></data>
+  <data name="CompareZero" xml:space="preserve"><value>先在跟读页完成两次相同文本的朗读，即可对比。</value></data>
+  <data name="CompareOne" xml:space="preserve"><value>已保存一次朗读。回到跟读页再读一遍，即可对比。</value></data>
+  <data name="CompareWelcome" xml:space="preserve"><value>同一文本的两次朗读可对比回听。</value></data>
+  <data name="SameTake" xml:space="preserve"><value>当前选中同一段录音，选择两次不同的练习即可连续对比。</value></data>
+  <data name="MixedReference" xml:space="preserve"><value>两条记录的评分参考不同。可先在跟读页将旧记录按英式重评，再比较分数。</value></data>
+  <data name="CompareReady" xml:space="preserve"><value>选择全文、分句或单词，依次回听两次朗读。</value></data>
+  <data name="WholeSentence" xml:space="preserve"><value>整句</value></data>
+  <data name="WholePassage" xml:space="preserve"><value>整段</value></data>
+  <data name="ThisSentence" xml:space="preserve"><value>本句</value></data>
+  <data name="ScoreAndAccuracy" xml:space="preserve"><value>参考分 {0}  ·  准确度 {1}</value></data>
+  <data name="NoCorrespondingSection" xml:space="preserve"><value>这次练习没有对应的分句区间。</value></data>
+  <data name="ComparedSection" xml:space="preserve"><value>本句 {0:0} 分  ·  {1:0.00}–{2:0.00} 秒</value></data>
+  <data name="TranscriptLine" xml:space="preserve"><value>转写：{0}</value></data>
+  <data name="ExitConfirm" xml:space="preserve"><value>退出会中断正在进行的这次练习。确定退出吗？</value></data>
+  <data name="VoiceCori" xml:space="preserve"><value>英音 · Cori 女声</value></data>
+  <data name="VoiceNorthern" xml:space="preserve"><value>英音 · 英格兰北部男声</value></data>
+  <data name="VoiceUSMale" xml:space="preserve"><value>美音 · {0} 男声</value></data>
+  <data name="VoiceUSFemale" xml:space="preserve"><value>美音 · {0} 女声</value></data>
+  <data name="VoiceUS" xml:space="preserve"><value>美音 · {0}</value></data>
+  <data name="DiagNoVoice" xml:space="preserve"><value>录音中没有足够的人声</value></data>
+  <data name="DiagTooQuiet" xml:space="preserve"><value>麦克风音量太低</value></data>
+  <data name="DiagTooShort" xml:space="preserve"><value>录音太短</value></data>
+  <data name="DiagClipped" xml:space="preserve"><value>声音削波，请降低输入音量</value></data>
+  <data name="DiagNoisy" xml:space="preserve"><value>背景噪声较大</value></data>
+  <data name="DiagInvalidId" xml:space="preserve"><value>练习编号无效。</value></data>
+  <data name="DiagInvalidReference" xml:space="preserve"><value>请输入英文句子或段落（最多 6000 个字符）。</value></data>
+  <data name="DiagDeviceSetting" xml:space="preserve"><value>READALOUD_DEVICE 可设为 auto 或 cpu。</value></data>
+  <data name="DiagCpuChosen" xml:space="preserve"><value>已指定 CPU</value></data>
+  <data name="DiagNoCuda" xml:space="preserve"><value>未检测到可用的 CUDA 设备</value></data>
+  <data name="DiagCudaInit" xml:space="preserve"><value>CUDA 初始化失败，本次使用 CPU</value></data>
+  <data name="DiagOutOfMemory" xml:space="preserve"><value>显存不足，本次会话已切换到 CPU</value></data>
+  <data name="DiagMixedCpu" xml:space="preserve"><value>部分分句在显存不足后改用 CPU 完成</value></data>
+  <data name="DiagWavFormat" xml:space="preserve"><value>评测录音需要 16 kHz、单声道、16 位 PCM WAV。</value></data>
+  <data name="DiagTooLong" xml:space="preserve"><value>每次练习最长 5 分钟，请将更长的文章分段录制。</value></data>
+  <data name="DiagWavUnreadable" xml:space="preserve"><value>无法读取这段 WAV 录音。</value></data>
+  <data name="DiagLowMatch" xml:space="preserve"><value>录音与目标句匹配度低，请核对句子后重读</value></data>
+  <data name="DiagExtraAudio" xml:space="preserve"><value>检测到了明显超出原句的语音</value></data>
+  <data name="DiagCannotAlign" xml:space="preserve"><value>这段录音未能可靠对齐，请完整读一遍。</value></data>
+  <data name="DiagMissingSentence" xml:space="preserve"><value>转写中没有找到这句，可能漏读。</value></data>
+  <data name="DiagUnlocated" xml:space="preserve"><value>转写与这句缺少足够的对应词，无法可靠定位。</value></data>
+  <data name="DiagPartial" xml:space="preserve"><value>只定位到这句的一部分，暂不评分，可回听核对。</value></data>
+  <data name="DiagAmbiguous" xml:space="preserve"><value>原文有连续重复的句子，无法判断读的是哪一次。</value></data>
+  <data name="DiagBadSpan" xml:space="preserve"><value>这句的音频跨度不适合可靠精评，请回听核对。</value></data>
+  <data name="DiagNoEnglish" xml:space="preserve"><value>未识别出可定位的英文语音</value></data>
+  <data name="DiagPassageExtra" xml:space="preserve"><value>转写含明显多读的内容，暂不计算整段参考分</value></data>
+  <data name="DiagConflict" xml:space="preserve"><value>这次录音已用于另一条目标句。</value></data>
+  <data name="DiagDraftMissing" xml:space="preserve"><value>找不到待评测录音，请重新录制或导入。</value></data>
+  <data name="DiagTakeMissing" xml:space="preserve"><value>找不到这次练习。</value></data>
+  <data name="DiagRescoreAudioMissing" xml:space="preserve"><value>找不到这次练习的原声，无法重评。</value></data>
+  <data name="DiagInvalidSession" xml:space="preserve"><value>无效会话。</value></data>
+  <data name="DiagUnknownAction" xml:space="preserve"><value>未知操作。</value></data>
+  <data name="DiagHistoryRead" xml:space="preserve"><value>无法读取本地练习记录。</value></data>
+  <data name="DiagRequestLength" xml:space="preserve"><value>请求长度无效。</value></data>
+  <data name="DiagRequestFormat" xml:space="preserve"><value>请求格式无效。</value></data>
+  <data name="DiagVoiceList" xml:space="preserve"><value>请选择列表中的英音示范声音。</value></data>
+  <data name="DiagLongWord" xml:space="preserve"><value>示范文本中有超过 100 个字符的连续单词，请核对原文。</value></data>
+  <data name="DiagNoPcm" xml:space="preserve"><value>这段文字没有生成可播放的声音。</value></data>
+  <data name="DiagDemoFailed" xml:space="preserve"><value>本地示范语音未能生成。</value></data>
+  <data name="DiagPrepareFailed" xml:space="preserve"><value>未能准备文本读音。</value></data>
+  <data name="DiagAssessFailed" xml:space="preserve"><value>本地评测未完成，录音已保留。</value></data>
+  <data name="DiagRescoreFailed" xml:space="preserve"><value>英式重评未完成，可稍后重试。</value></data>
+  <data name="DiagEngineFiles" xml:space="preserve"><value>应用目录不完整，请将启动程序与 runtime、engine 文件夹放在一起。</value></data>
+  <data name="DiagEngineStart" xml:space="preserve"><value>无法启动本地评测进程。</value></data>
+  <data name="DiagEngineLog" xml:space="preserve"><value>本地服务未能启动。请查看数据目录中的 runtime.log。</value></data>
+  <data name="DiagEmptyResult" xml:space="preserve"><value>本地服务返回了空结果。</value></data>
+  <data name="DiagImportLength" xml:space="preserve"><value>请选择 5 分钟以内的录音。</value></data>
+  <data name="DiagEmptyWav" xml:space="preserve"><value>这个 WAV 文件没有音频。</value></data>
+  <data name="DiagMicInterrupted" xml:space="preserve"><value>录音设备已中断，请重新选择麦克风。</value></data>
+  <data name="DiagMissingAudio" xml:space="preserve"><value>找不到这段录音。</value></data>
+  <data name="DiagWordRange" xml:space="preserve"><value>这个词没有可回放的时间段。</value></data>
+  <data name="DiagVoiceSilent" xml:space="preserve"><value>所选声音没有生成可播放的示范。</value></data>
+  <data name="DiagVoiceGone" xml:space="preserve"><value>本机已找不到这个声音，请重新选择示范声音。</value></data>
+  <data name="WindowsVoiceError" xml:space="preserve"><value>未能播放所选 Windows 语音（{0:X8}）。</value></data>
+  <data name="DiffDelete" xml:space="preserve"><value>疑似漏读：{0}</value></data>
+  <data name="DiffInsert" xml:space="preserve"><value>疑似多读：{0}</value></data>
+  <data name="DiffReplace" xml:space="preserve"><value>转写差异：{0}</value></data>
+  <data name="ReasonSkipped" xml:space="preserve"><value>可能漏读了 {0}</value></data>
+  <data name="ReasonReviewCount" xml:space="preserve"><value>有 {0} 句待核对，暂不计算整段参考分</value></data>
+  <data name="SampleWorth" xml:space="preserve"><value>Worth it</value></data>
+  <data name="SampleMessage" xml:space="preserve"><value>Leave a message</value></data>
+  <data name="SampleTickets" xml:space="preserve"><value>Three tickets</value></data>
+  <data name="SampleStation" xml:space="preserve"><value>The station</value></data>
+  <data name="SampleTea" xml:space="preserve"><value>A cup of tea</value></data>
+  <data name="BackToPassage" xml:space="preserve"><value>返回全文</value></data>
+  <data name="RetakeOnly" xml:space="preserve"><value>只重练这一句</value></data>
+  <data name="ImportOwnTake" xml:space="preserve"><value>导入练习录音</value></data>
+  <data name="RetakeComparison" xml:space="preserve"><value>原读与重练对比</value></data>
+  <data name="BaselinePlay" xml:space="preserve"><value>听原段中的这句</value></data>
+  <data name="BaselinePair" xml:space="preserve"><value>原读 → 重练</value></data>
+  <data name="HearContext" xml:space="preserve"><value>听句中读法</value></data>
+  <data name="ReferenceRecording" xml:space="preserve"><value>示范来源</value></data>
+  <data name="SourceHelp" xml:space="preserve"><value>选择内置声音或这篇原文的范读录音。</value></data>
+  <data name="ImportModel" xml:space="preserve"><value>导入自己的范读</value></data>
+  <data name="RecordThisSentence" xml:space="preserve"><value>录制这一句</value></data>
+  <data name="RetakeNumber" xml:space="preserve"><value>第 {0} 句重练</value></data>
+  <data name="RetakeReady" xml:space="preserve"><value>已选第 {0} 句。可以录音或导入这句话的练习录音。</value></data>
+  <data name="ReturnedToPassage" xml:space="preserve"><value>已返回全文的第 {0} 句。</value></data>
+  <data name="RetakeUnscored" xml:space="preserve"><value>这次定位不够可靠，分数待核对。</value></data>
+  <data name="RetakeTotal" xml:space="preserve"><value>{0} 分 · {1}</value></data>
+  <data name="OriginalTakeLabel" xml:space="preserve"><value>段落原读</value></data>
+  <data name="SentenceTakeLabel" xml:space="preserve"><value>本句重练</value></data>
+  <data name="OriginalNotRecorded" xml:space="preserve"><value>还没有这段原文的练习录音。</value></data>
+  <data name="SentenceNotRecorded" xml:space="preserve"><value>录完这一句后可以对比单词和停顿。</value></data>
+  <data name="ImportedVoice" xml:space="preserve"><value>范读 · {0}</value></data>
+  <data name="UnlocatedWord" xml:space="preserve"><value>这次范读里未能可靠定位所选词。可以听整句。</value></data>
+  <data name="UnlocatedSentence" xml:space="preserve"><value>这段范读里未能可靠定位本句，可以听整段。</value></data>
+  <data name="ContextHelp" xml:space="preserve"><value>从整句范读中截取所选词和相邻词，保留实际的连读与节奏。</value></data>
+  <data name="ImportedWordHelp" xml:space="preserve"><value>听导入范读中这个词的原声。</value></data>
+  <data name="AlignedCoverage" xml:space="preserve"><value>已定位 {0} / {1} 个词</value></data>
+  <data name="ImportModelTitle" xml:space="preserve"><value>选择朗读当前原文的 WAV 范读</value></data>
+  <data name="AligningExample" xml:space="preserve"><value>正在按原文定位范读中的句子和单词…</value></data>
+  <data name="ImportedExample" xml:space="preserve"><value>已导入 {0}，定位到 {1} / {2} 个词。</value></data>
+  <data name="ContextExcerpt" xml:space="preserve"><value>句中读法 · {0}</value></data>
+  <data name="DiagInvalidOrigin" xml:space="preserve"><value>单句重练与原文不匹配。</value></data>
+  <data name="DiagWrongModel" xml:space="preserve"><value>范读与当前原文不匹配。</value></data>
+  <data name="DiagMissingModel" xml:space="preserve"><value>找不到导入的范读录音。</value></data>
+  <data name="DiagTimingModel" xml:space="preserve"><value>范读时间定位未完成，请稍后重试。</value></data>
+  <data name="RetakeWordFinding" xml:space="preserve"><value>目标 /{0}/，听起来可能更接近 /{1}/。</value></data>
+</root>

@@ -1,0 +1,133 @@
+[
+  {
+    "group": "phones",
+    "id": "OpenPronounce/wav2vec2-base-phones-en",
+    "revision": "2e12ec2f203c8bf6019647add921482fa593da21",
+    "files": [
+      {
+        "name": "README.md",
+        "bytes": 5436,
+        "sha256": null
+      },
+      {
+        "name": "char_head.safetensors",
+        "bytes": 98576,
+        "sha256": "4b0b6576e2c90a0429384da9a9ee8949611a713da0f2fe5092a0b7b9b291193e"
+      },
+      {
+        "name": "config.json",
+        "bytes": 2661,
+        "sha256": null
+      },
+      {
+        "name": "hidden_projection.safetensors",
+        "bytes": 3149976,
+        "sha256": "b788176f8be10b984649ec3abfa69c846595e081eb6a1e69917de132fb8295e1"
+      },
+      {
+        "name": "model.safetensors",
+        "bytes": 378715336,
+        "sha256": "8143feb71b594346ef4de2688d80812cafda4086f84f61c4cafc775e37fc238a"
+      },
+      {
+        "name": "preprocessor_config.json",
+        "bytes": 212,
+        "sha256": null
+      },
+      {
+        "name": "special_tokens_map.json",
+        "bytes": 85,
+        "sha256": null
+      },
+      {
+        "name": "tokenizer_config.json",
+        "bytes": 321,
+        "sha256": null
+      },
+      {
+        "name": "vocab.json",
+        "bytes": 4637,
+        "sha256": null
+      }
+    ]
+  },
+  {
+    "group": "asr",
+    "id": "facebook/wav2vec2-large-960h",
+    "revision": "bdeaacdf88f7a155f50a2704bc967aa81fbbb2ab",
+    "files": [
+      {
+        "name": "README.md",
+        "bytes": 3532,
+        "sha256": null
+      },
+      {
+        "name": "config.json",
+        "bytes": 843,
+        "sha256": null
+      },
+      {
+        "name": "preprocessor_config.json",
+        "bytes": 159,
+        "sha256": null
+      },
+      {
+        "name": "pytorch_model.bin",
+        "bytes": 1262009187,
+        "sha256": "7aef99395c7b7ab5b78b6d00bdf71aebd93a7340b72d614303d598de8f94a10f"
+      },
+      {
+        "name": "special_tokens_map.json",
+        "bytes": 85,
+        "sha256": null
+      },
+      {
+        "name": "tokenizer_config.json",
+        "bytes": 163,
+        "sha256": null
+      },
+      {
+        "name": "vocab.json",
+        "bytes": 291,
+        "sha256": null
+      }
+    ]
+  },
+  {
+    "group": "voices",
+    "id": "rhasspy/piper-voices",
+    "revision": "5ec43b186ef915a195d3ddbcfd9916e76c503c3f",
+    "files": [
+      {
+        "name": "en/en_GB/cori/medium/en_GB-cori-medium.onnx",
+        "bytes": 63221984,
+        "sha256": "2e0a55e140de672aa19b182602b407607bd2e6c35fc6020c0b1516053c02e995"
+      },
+      {
+        "name": "en/en_GB/cori/medium/en_GB-cori-medium.onnx.json",
+        "bytes": 6354,
+        "sha256": "7204f5ead17759278419129290e51ebb414f09f7ac6cd0e567532592956bbbac"
+      },
+      {
+        "name": "en/en_GB/cori/medium/MODEL_CARD",
+        "bytes": 1171,
+        "sha256": "b1cdf93d1b0586941518677eb69c4ebd2db65573c57daeb7e45d3a658aae6cb8"
+      },
+      {
+        "name": "en/en_GB/northern_english_male/medium/en_GB-northern_english_male-medium.onnx",
+        "bytes": 63221984,
+        "sha256": "41199d55776c142c151e018cf77bea80ca5f01b7b834f81cd781df5b751bf2fb"
+      },
+      {
+        "name": "en/en_GB/northern_english_male/medium/en_GB-northern_english_male-medium.onnx.json",
+        "bytes": 6267,
+        "sha256": "0159d481609238e47e31114496d004b86d7b49d1f95a81adfb6e5ff758d99013"
+      },
+      {
+        "name": "en/en_GB/northern_english_male/medium/MODEL_CARD",
+        "bytes": 447,
+        "sha256": "a27eec63b7d43f040b0a691c15a3d9a2aeceab266768290efcb30584a6af832f"
+      }
+    ]
+  }
+]
